@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #ff6b6b, #ff8585);
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 2rem 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .music-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .song-card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease;
+        }
+
+        .song-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .song-message {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .song-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .player-container {
+            background: rgba(0,0,0,0.1);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-3px);
+        }
+
+        .instruction {
+            text-align: center;
+            background: rgba(255,255,255,0.2);
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Algunas canciones que me hacen pensar en ti💝</h1>
+
+        <div class="instruction">
+            🎵Pinche chamaca hermosa, preciosa, unica... me encantas.
+        </div>
+
+        <div class="music-container">
+            <!-- Canción 1 -->
+            <div class="song-card">
+                <div class="song-message">
+                    PFFF Esta cancion me la enviaste y es realmente super buena, vessss, escucho lo que me envias, ademas, como dice la letra de la cancion, siempre estare a tu lado para aguantar la tormenta, podemos superarlo todo cuando hayan problemas :,3...
+                </div>
+                <div class="song-title">Goldford - Ride The Storm</div>
+                <div class="player-container">
+                    <audio controls>
+                        <source src="cancion 1.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Canción 2 -->
+            <div class="song-card">
+                <div class="song-message">
+                    Cada vez que escucho esta melodía, es inevitable no pensar en ti...
+                </div>
+                <div class="song-title">Can't Help Falling in Love - Elvis Presley</div>
+                <div class="player-container">
+                    <audio controls>
+                        <source src="cancion 2.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Canción 3 -->
+            <div class="song-card">
+                <div class="song-message">
+                    Esta canción la puse ya que me hablas mucho de ella y bueno, realmente me suena muy bien UwU y es linda la cancion ...
+                </div>
+                <div class="song-title">JENNIE - You & Me</div>
+                <div class="player-container">
+                    <audio controls>
+                        <source src="cancion 3.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-button">Volver a la página principal</a>
+    </div>
+</body>
+</html>
