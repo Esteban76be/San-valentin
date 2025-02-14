@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #ff6b6b, #ff8585);
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 2rem 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .photo-container {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 1rem;
+            transition: transform 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .photo-container:hover {
+            transform: translateY(-10px);
+        }
+
+        .photo {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .photo-caption {
+            text-align: center;
+            font-size: 1.1rem;
+            padding: 0.5rem;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-3px);
+        }
+
+        .instruction {
+            text-align: center;
+            background: rgba(255,255,255,0.2);
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Fotitosssssss 💖</h1>
+
+        <div class="instruction">
+            📸Realmente todas las fotos que me envias, me sacan una sonrisa muy muy grande.
+        </div>
+        
+        <div class="gallery">
+            <!-- Ejemplo de cómo agregar fotos (repite este bloque para cada foto) -->
+            <div class="photo-container">
+                <img src="fotos/beni.jpg" alt="Foto romántica" class="photo">
+                <div class="photo-caption">Empecemos con una foto de beni para sacarte una sonrisa</div>
+            </div>
+            
+            <div class="photo-container">
+                <img src="fotos/pandi6.jpg" alt="Foto romántica" class="photo">
+                <div class="photo-caption">Pero mira  que chiquita tan preciosaaaaaaa </div>
+            </div>
+            
+            <div class="photo-container">
+                <img src="fotos/pandi7.jpg" alt="Foto romántica" class="photo">
+                <div class="photo-caption">Aqui también una niña muy hermosa escondida detras de un juguete</div>
+            </div>
+            
+            <div class="photo-container">
+                <img src="fotos/pandi1.jpg" alt="Foto romántica" class="photo">
+                <div class="photo-caption">Mi preciosa novia cumpliendo 22 añitos UwU💕</div>
+            </div>
+
+            <div class="photo-container">
+                <img src="fotos/pandi3.jpg" alt="Foto romántica" class="photo">
+                <div class="photo-caption">Pero mira que mujer mas preciosa, hermosa, unica, sexy, ricolina, hermosisimaaaa 💑</div>
+            </div>
+            
+            <div class="photo-container">
+                <img src="fotos/pandi4.jpg" alt="Foto romántica" class="photo">
+                <div class="photo-caption">Me encanta cuando me envias fotitos asi, realmente verte es algo magico 💕</div>
+            </div>
+
+            <div class="photo-container">
+                <img src="fotos/pandi5.jpg" alt="Foto romántica" class="photo">
+                <div class="photo-caption">La nieve blanca se te ve preciosa encima, ahora imagina cuando tengas otras cositas blancas encima 💑</div>
+            </div>
+            
+            <div class="photo-container">
+                <img src="fotos/pandi2.jpg" alt="Foto romántica" class="photo">
+                <div class="photo-caption">Perdon por el mensaje de la foto anterior, estas bien hermosa, me deje llevar  💕</div>
+            </div>
+
+            <div class="photo-container">
+                <img src="fotos/beni2.jpg" alt="Foto romántica" class="photo">
+                <div class="photo-caption">Otra fotito de beni para finalizar y salgas de aqui con una sonrisa 💕</div>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-button">Volver a la página principal</a>
+    </div>
+</body>
+</html>
